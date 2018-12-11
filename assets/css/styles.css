@@ -4,6 +4,10 @@
 @font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;src: url(../fonts/Montserrat/Montserrat-Bold.otf) format('opentype');}
 
 
+titanic {
+  float: none;
+}
+
 body {
   font-family: 'MyriadPro';
   background: linear-gradient(#7045FF, #5857b0, #6173F4);
