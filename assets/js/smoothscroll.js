@@ -301,4 +301,4 @@ if (ischrome) {
     ssc_addEvent("mousedown", ssc_mousedown);
     ssc_addEvent("mousewheel", ssc_wheel);
     ssc_addEvent("load", ssc_init)
-}
+}
