@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <!-- analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64076788-6"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-64076788-6');
-  </script>
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <title>Owen Selles - Portfolio</title>
+  <title>Owen Selles</title>
   <meta content="Owen Selles is a Software Development Student at Scalda, Vlissingen." name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -66,9 +58,6 @@
           <a href="https://github.com/owenselles" target="_blank">
             <i class="fa fa-github"></i>
           </a>
-          <a href="https://www.facebook.com/profile.php?id=100010045517393" target="_blank">
-            <i class="fa fa-facebook"></i>
-          </a>
           <a href="mailto:owenselles@protonmail.com">
             <i class="fa fa-envelope-o"></i>
           </a>
@@ -79,9 +68,6 @@
           </a>
           <a href="https://github.com/owenselles" target="_blank">
             <i class="fa fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100010045517393" target="_blank">
-            <i class="fa fa-facebook"></i>
           </a>
           <a href="mailto:owenselles@protonmail.com">
             <i class="fa fa-envelope-o"></i>
@@ -116,7 +102,7 @@
             <h5>
               <b>FREE TIME</b>
             </h5>
-            <p>When I am not building anything, I spend time printing things with my 3d printer and playing games on my PC.</p>
+            <p>When I am not building anything I spend time printing things with my 3d printer and racing with FPV drones.</p>
           </div>
         </div>
       </div>
@@ -165,11 +151,11 @@
               <div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                 <div class="js-item grid-item">
                   <div class="front">
-                    <img alt="Rails" src="assets/img/js-128.png">
-                    <h4 class="wh">CHARLIE</h4>
+                    <img alt="Java" src="assets/img/js-128.png">
+                    <h4 class="wh">VOXFALL BOT</h4>
                   </div>
                   <div class="back">
-                    <p>An highly functional sharded discord bot written in javascript. Used by 50000+ users at its peak.</p>
+                    <p>A sharded Discord bot that currently has over 15000 users.</p>
                   </div>
                 </div>
               </div>
@@ -186,14 +172,13 @@
                 </div>
               </div>
               <div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                <div class="java-item grid-item">
+                <div class="android-item grid-item">
                   <div class="front">
-                    <img alt="Rails" src="assets/img/android-128.png">
-                    <h4 class="wh">STREAK REMINDER</h4>
+                    <img alt="Android" src="assets/img/android-128.png">
+                    <h4 class="wh">AH Medewerkers</h4>
                   </div>
                   <div class="back">
-                    <p>My first android app made in Android Studio using Java.</p>
-                    <a class="btn btn-default" href="https://github.com/owenselles/streakreminder" target="_blank">VIEW ON GITHUB</a>
+                    <p>App gemaakt voor Albert Heijn medewerkers om overal toegang te hebben tot je werkinformatie.</p>
                   </div>
                 </div>
               </div>
@@ -207,7 +192,7 @@
         <div class="col-lg-4 col-lg-offset-4">
           <h4 class="underlined">CONTACT</h4>
           <h5 class="text-center" id="success-msg">Your Message has been sent!</h5>
-          <form id="contact-form">
+          <form id="contact-form" method="post" action="send_form_email.php">
             <div class="form-group">
               <input class="form-control" id="name" name="name" placeholder="Name" type="text">
             </div>
@@ -217,7 +202,7 @@
             <div class="form-group">
               <textarea class="form-control" cols="30" id="message" name="message" placeholder="Message" rows="3"></textarea>
             </div>
-            <button class="btn btn-default btn-block" data-loading-text="Sending..." id="send-message" type="submit">Error. Server connection failed</button>
+            <button class="btn btn-default btn-block" data-loading-text="Sending..." id="send-message" type="submit">Submit</button>
           </form>
         </div>
       </div>
@@ -243,37 +228,6 @@
   <script src="assets/js/scrolling-nav.js" type="text/javascript"></script>
   <script src="assets/js/wow.min.js" type="text/javascript"></script>
   <script src="assets/js/jquery.validate.js" type="text/javascript"></script>
-  <script src="assets/js/parse-1.4.2.min.js" type="text/javascript"></script>
-  <script src="assets/js/util.js" type="text/javascript"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
-  <script type="text/javascript">
-$(document).ready(function() {
-    if ($('#contact-form').length > 0 ) {
-        contactScript('forcontact');
-    }
-});
-//firebase
-function contactScript(value) {
-    var a = {
-      apiKey: "AIzaSyAwqXi78eXUhBRH9MlG0VhWo6pnA7m2uw4",
-      authDomain: "owenselles-7acc6.firebaseapp.com",
-      databaseURL: "https://owenselles-7acc6.firebaseio.com",
-      projectId: "owenselles-7acc6",
-      storageBucket: "owenselles-7acc6.appspot.com",
-      messagingSenderId: "51576687575"
-    };
-    firebase.initializeApp(a);
-    var b = firebase.database().ref("messages");
-        $("#contact-form").submit(function(a) { $(this), console.log("Submit to Firebase");
-        var c = $("#name").val(),
-            d = $("#email").val(),
-            g = $("#message").val(),
-            f = { name: c, email: d, message: g};
-        return b.push(f).then(function(a) {
-            $(".sucess").css("display", "block"),
-            $(".sucess-none").css("display", "none") }), !1 })
-}
-</script>
   <script>
     $(document).ready(function () {
       $('#year').text(new Date().getFullYear());
@@ -283,3 +237,4 @@ function contactScript(value) {
     });
   </script>
 </body>
+</html>
