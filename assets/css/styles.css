@@ -1,12 +1,11 @@
 @font-face {font-family: 'MyriadPro';font-style: normal;font-weight: 400;src: url(../fonts/MyriadPro/MyriadPro-Regular.otf) format('opentype');}
-
 @font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;src: url(../fonts/Montserrat/Montserrat-Regular.otf) format('opentype');}
 @font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;src: url(../fonts/Montserrat/Montserrat-Bold.otf) format('opentype');}
 
 
 body {
   font-family: 'MyriadPro';
-  background: linear-gradient(#7045FF, #5857b0, #6173F4);
+  background: linear-gradient(#475df9, #5857b0, #6173F4);
 }
 
 h1, h2, h3, h4, h5, h6 {
