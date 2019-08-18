@@ -2,7 +2,6 @@
 @font-face {font-family: 'Montserrat';font-style: normal;font-weight: 400;src: url(../fonts/Montserrat/Montserrat-Regular.otf) format('opentype');}
 @font-face {font-family: 'Montserrat';font-style: normal;font-weight: 600;src: url(../fonts/Montserrat/Montserrat-Bold.otf) format('opentype');}
 
-
 body {
   font-family: 'MyriadPro';
   background: linear-gradient(#475df9, #5857b0, #6173F4);
@@ -415,3 +414,5 @@ img {
 #work .section {
   padding-bottom: 100px;
 }
+
+

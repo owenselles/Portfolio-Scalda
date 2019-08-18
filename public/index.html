@@ -63,9 +63,6 @@
           <a href="mailto:owenselles@protonmail.com">
             <i class="fa fa-at"></i>
           </a>
-          <a href="https://www.owenselles.com/resume.pdf">
-            <i class="fa fa-file"></i>
-          </a>
         </div>
         <div class="hidden-sm hidden-md hidden-lg" id="social">
           <a href="https://www.linkedin.com/in/owen-selles" target="_blank">
@@ -76,9 +73,6 @@
           </a>
           <a href="mailto:owenselles@protonmail.com">
             <i class="fa fa-at"></i>
-          </a>
-          <a href="https://www.owenselles.com/resume.pdf">
-            <i class="fa fa-file"></i>
           </a>
         </div>
       </div>
@@ -162,18 +156,6 @@
           <h4 class="underlined">PROJECTS</h4>
           <div class="wow fadeIn">
             <div class="row">
-                <div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
-                    <div class="js-item grid-item">
-                      <div class="front">
-                        <img alt="Java" src="assets/img/js-128.png">
-                        <h4 class="wh">KARTOS</h4>
-                      </div>
-                      <div class="back">
-                        <p>A Discord bot with API that is used by over 40000 users!</p>
-                        <a class="btn btn-default" href="https://discordbots.org/bot/604720762145865738"
-                          target="_blank">VIEW ON GITHUB</a>
-                      </div>
-                    </div>
               <div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
                 <div class="java-item grid-item">
                   <div class="front">
@@ -229,63 +211,61 @@
                   </div>
                 </div>
               </div>
+              <div class="col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1">
+                <div class="js-item grid-item">
+                  <div class="front">
+                    <img alt="Java" src="assets/img/js-128.png">
+                    <h4 class="wh">KARTOS</h4>
+                  </div>
+                  <div class="back">
+                    <p>A Discord bot with API that is used by over 40000 users!</p>
+                    <a class="btn btn-default" href="https://discordbots.org/bot/604720762145865738"
+                      target="_blank">VIEW</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="contact">
-      <div class="row section">
-        <div class="col-lg-4 col-lg-offset-4">
-          <h4 class="underlined">CONTACT</h4>
-          <h5 class="text-center" id="success-msg">Your Message has been sent!</h5>
-          <form id="contact-form" method="post" action="send_form_email.php">
-            <div class="form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-            </div>
-            <div class="form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email">
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" cols="30" id="message" name="message" placeholder="Message"
-                rows="3"></textarea>
-            </div>
-            <button class="btn btn-default btn-block" data-loading-text="Sending..." id="send-message"
-              type="submit">Submit</button>
-          </form>
+      <div id="contact">
+        <div class="row section">
+          <div class="col-lg-4 col-lg-offset-4">
+            <h4 class="underlined">CONTACT</h4>
+            <h4 class="underlined">Send me a message on Linkedin or email to owenselles@protonmail.com</h4>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="row section">
+          <div class="col-lg-4">
+            <h5>Copyright ©
+              <span id="year"></span>
+            </h5>
+            <h5>•</h5>
+            <h5>Coded with &#10084; by</h5>
+            <a href="https://github.com/owenselles/Portfolio" target="_blank">@owenselles</a>
+          </div>
         </div>
       </div>
     </div>
-    <div id="footer">
-      <div class="row section">
-        <div class="col-lg-4">
-          <h5>Copyright ©
-            <span id="year"></span>
-          </h5>
-          <h5>•</h5>
-          <h5>Coded with &#10084; by</h5>
-          <a href="https://github.com/owenselles/Portfolio" target="_blank">@owenselles</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="assets/js/jquery-2.1.3.min.js" type="text/javascript"></script>
-  <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="assets/js/smoothscroll.js" type="text/javascript"></script>
-  <script src="assets/js/scrolling-nav.js" type="text/javascript"></script>
-  <script src="assets/js/wow.min.js" type="text/javascript"></script>
-  <script src="assets/js/jquery.validate.js" type="text/javascript"></script>
-  <script>
-    $(document).ready(function () {
-      $('#year').text(new Date().getFullYear());
-    });
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-  <script src="/__/firebase/6.4.0/firebase-app.js"></script>
-  <script src="/__/firebase/init.js"></script>
+    <script src="assets/js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/smoothscroll.js" type="text/javascript"></script>
+    <script src="assets/js/scrolling-nav.js" type="text/javascript"></script>
+    <script src="assets/js/wow.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.validate.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function () {
+        $('#year').text(new Date().getFullYear());
+      });
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script src="/__/firebase/6.4.0/firebase-app.js"></script>
+    <script src="/__/firebase/init.js"></script>
 </body>
 
 </html>
